@@ -11,3 +11,14 @@ $lightPurple: #6a52b3;
 // shades:
 $darkGray: #282828;
 $white: #ffffff;
+
+.toolbar {
+  color: $white;
+  background-color: $darkPurple;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}

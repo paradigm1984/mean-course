@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+$darkGray: #282828;
+
+html {
+  font-family: verdana;
+  color: $darkGray;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}

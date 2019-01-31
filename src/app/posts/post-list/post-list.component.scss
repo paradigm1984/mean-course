@@ -1,0 +1,43 @@
+// primary colors:
+$darkIndigo: #273377;
+$indigo: #3949ab;
+$lightIndigo: #606dbb;
+
+// secondary colors:
+$darkPurple: #301b70;
+$purple: #4527a0;
+$lightPurple: #6a52b3;
+
+// shades:
+$darkGray: #282828;
+$white: #ffffff;
+
+mat-accordion {
+    width: 80%;
+
+  mat-expansion-panel {
+    background-color: $white;
+    color: $darkIndigo;
+    font-weight: 600;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.05),0 1px 1px 0 rgba(0,0,0,.05),0 1px 3px 0 rgba(0,0,0,.05);
+    margin: 5px auto;
+
+    mat-expansion-panel-header {
+
+    }
+    .expansion-class-body {
+      color: $darkGray;
+      font-weight: 400;
+    }
+  }
+  mat-expansion-panel:first-of-type {
+    border-top: 1px solid rgba(0,0,0,0.02);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+  mat-expansion-panel:first-of-type {
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+}
+.no-post-message {
+  text-align: center;
+}

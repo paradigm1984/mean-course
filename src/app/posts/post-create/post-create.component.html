@@ -1,11 +1,9 @@
-<h2>Post create component</h2>
 <div class="form-card">
+  <h3 class="form-header">Post create component</h3>
   <div class="form-field">
     <textarea class="form-input" rows="6" [value]="newPost" [(ngModel)]="enteredValue"></textarea>
   </div>
   <button class="form-button" (click)="onAddPost()">Save Post</button>
 </div>
-<br />
-<!-- angularm event listener -->
-
-<p>{{ newPost }}</p>
+<div class="break-line"></div>
+<!-- <p class="output">{{ newPost }}</p> -->
