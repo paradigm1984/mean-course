@@ -1,13 +1,10 @@
-// primary colors:
-$darkIndigo: #273377;
-$indigo: #3949ab;
-$lightIndigo: #606dbb;
+@import "../colors";
 
-// secondary colors:
-$darkPurple: #301b70;
-$purple: #4527a0;
-$lightPurple: #6a52b3;
-
-// shades:
-$darkGray: #282828;
-$white: #ffffff;
+.break-line {
+  background-color: $darkGray;
+  opacity: .15;
+  width: 90%;
+  max-width: 670px;
+  height: 1px;
+  margin: 2.2rem auto 1.3rem auto;
+}

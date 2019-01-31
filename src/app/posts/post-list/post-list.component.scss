@@ -1,19 +1,8 @@
-// primary colors:
-$darkIndigo: #273377;
-$indigo: #3949ab;
-$lightIndigo: #606dbb;
+@import "../../../colors";
 
-// secondary colors:
-$darkPurple: #301b70;
-$purple: #4527a0;
-$lightPurple: #6a52b3;
-
-// shades:
-$darkGray: #282828;
-$white: #ffffff;
-
-mat-accordion {
+.expansion-container {
     width: 80%;
+    margin: 0 auto;
 
   mat-expansion-panel {
     background-color: $white;
@@ -23,7 +12,8 @@ mat-accordion {
     margin: 5px auto;
 
     mat-expansion-panel-header {
-
+      color: $white;
+      background-color: $darkIndigo;
     }
     .expansion-class-body {
       color: $darkGray;
@@ -40,4 +30,8 @@ mat-accordion {
 }
 .no-post-message {
   text-align: center;
+  color: $lightIndigo;
+  font-size: 70%;
+  opacity: .6;
+  margin: 0 auto;
 }

@@ -1,20 +1,8 @@
-// primary colors:
-$darkIndigo: #273377;
-$indigo: #3949ab;
-$lightIndigo: #606dbb;
-
-// secondary colors:
-$darkPurple: #301b70;
-$purple: #4527a0;
-$lightPurple: #6a52b3;
-
-// shades:
-$darkGray: #282828;
-$white: #ffffff;
+@import "../../colors";
 
 .toolbar {
   color: $white;
-  background-color: $darkPurple;
+  background-color: $darkIndigo;
   padding: 10px;
   display: flex;
   flex-direction: row;

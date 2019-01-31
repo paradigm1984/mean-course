@@ -1,31 +1,30 @@
-// primary colors:
-$darkIndigo: #273377;
-$indigo: #3949ab;
-$lightIndigo: #606dbb;
-
-// secondary colors:
-$darkPurple: #301b70;
-$purple: #4527a0;
-$lightPurple: #6a52b3;
-
-// shades:
-$darkGray: #282828;
-$white: #ffffff;
+@import "../../../colors";
 
 .form-card {
-  width: 70%;
+  width: 90%;
+  max-width: 550px;
+  padding: 1.5rem;
   margin: 1rem auto;
   box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
-  padding: 16px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .form-header {
     margin: 0 0 16px 0;
   }
-
-  .form-field,
-  .form-input {
+  form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-field {
+    width: 100%;
+    margin: 10px auto;
   }
   .form-input {
     font: inherit;
@@ -34,26 +33,42 @@ $white: #ffffff;
     border: 2px solid rgba(0,0,0,0.05);
     border-radius: 2px;
     outline: 0;
-    padding: 0;
-    margin: 0 0 10px 0;
-    width: 100%;
-    max-width: 100%;
+    // padding: 3px;
+    margin: 0;
+    // width: 100%;
+    height: auto;
     vertical-align: bottom;
-    text-align: inherit;
+    text-align: left;
+    font-size: 90%;
+    color: rgba(0,0,0,.90);
+  }
+  // .form-input::placeholder {
+  //   color: rgba(0,0,0,.40);
+  //   text-align: left;
+  //   font-size: 90%;
+  // }
+  .validation-text {
+    color: $errorRed;
+    font-size: 70%;
+  }
+  .error-border {
+    border: 1px solid $errorRed;
   }
   .form-button {
     color: white;
     background-color: $indigo;
     border: none;
+    border-bottom: 1px solid $darkIndigo;
+    margin-top: 5px;
     padding: 7px 10px;
     border-radius: 2px;
     box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
   }
-}
-.break-line {
-  background-color: $darkGray;
-  opacity: .15;
-  width: 85%;
-  height: 1px;
-  margin: 2rem auto;
+  .form-button:active {
+    color: white;
+    background-color: $darkIndigo;
+    margin-top: 6px;
+    border-bottom: none;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 2px 0 rgba(0,0,0,.12);
+  }
 }

@@ -1,9 +1,31 @@
 <div class="form-card">
   <h3 class="form-header">Post create component</h3>
-  <div class="form-field">
-    <textarea class="form-input" rows="6" [value]="newPost" [(ngModel)]="enteredValue"></textarea>
-  </div>
-  <button class="form-button" (click)="onAddPost()">Save Post</button>
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <mat-form-field class="form-field">
+      <input class="form-input"
+      matInput
+      id="title"
+      type="text"
+      name="title"
+      ngModel
+
+      required
+      #title="ngModel"/>
+      <mat-error *ngIf="title.invalid">Please enter a title.</mat-error>
+    </mat-form-field>
+    <mat-form-field class="form-field">
+      <textarea class="form-input"
+      matInput
+      id="content"
+      rows="6"
+      [value]="newPost"
+      name="content"
+      ngModel
+
+      required
+      #content="ngModel"></textarea>
+      <mat-error *ngIf="content.invalid">Please enter a body.</mat-error>
+    </mat-form-field>
+    <button class="form-button" type="submit">Save Post</button>
+  </form>
 </div>
-<div class="break-line"></div>
-<!-- <p class="output">{{ newPost }}</p> -->

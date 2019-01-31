@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 
 
 import { AppComponent } from './app.component';
@@ -23,7 +24,8 @@ import { PostListComponent } from './posts/post-list/post-list.component';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
