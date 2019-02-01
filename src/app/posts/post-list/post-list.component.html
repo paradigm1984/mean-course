@@ -1,9 +1,13 @@
-  <!-- <div class="expansion-container" *ngIf="posts.length > 0"> -->
-    <mat-accordion multi="true">
+   <!-- <!DOCTYPE html> -->
+
+<mat-accordion multi="true" *ngIf="posts.length > 0">
     <mat-expansion-panel *ngFor="let post of posts">
-      <mat-expansion-panel-header>{{post.title}}</mat-expansion-panel-header>
-      <p class="expansion-class-body">{{post.content}}</p>
+      <mat-expansion-panel-header>
+        {{post.title}}
+      </mat-expansion-panel-header>
+      <p class="expansion-class-body">
+        {{post.content}}
+      </p>
       </mat-expansion-panel>
     </mat-accordion>
-<!-- </div> -->
 <p class="no-post-message" *ngIf="posts.length <= 0">No posts added yet.</p>

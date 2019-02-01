@@ -2,7 +2,7 @@
 
 .form-card {
   width: 90%;
-  max-width: 550px;
+  max-width: 500px;
   padding: 1.5rem;
   margin: 1rem auto;
   box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
@@ -24,7 +24,12 @@
   }
   .form-field {
     width: 100%;
-    margin: 10px auto;
+    margin: 10px auto 15px auto;
+  }
+  .form-label {
+    color: rgba(0,0,0,.60);
+    text-align: left;
+    font-size: 70%;
   }
   .form-input {
     font: inherit;
@@ -33,20 +38,16 @@
     border: 2px solid rgba(0,0,0,0.05);
     border-radius: 2px;
     outline: 0;
-    // padding: 3px;
-    margin: 0;
+    padding: 3px 0;
+    margin: 3px 0 0 0;
     // width: 100%;
     height: auto;
     vertical-align: bottom;
     text-align: left;
     font-size: 90%;
-    color: rgba(0,0,0,.90);
+    color: rgba(0,0,0,.70);
+    transition-duration: .5s;
   }
-  // .form-input::placeholder {
-  //   color: rgba(0,0,0,.40);
-  //   text-align: left;
-  //   font-size: 90%;
-  // }
   .validation-text {
     color: $errorRed;
     font-size: 70%;
